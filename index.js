@@ -92,3 +92,15 @@ button.addEventListener('click', () => {
 })
 
 // HTML BUTTON ELEMENT AND GLOBAL
+
+//! this, call apply and bind
+
+const user = { name: "Divyanshu" };
+
+function intro(skill1, skill2) {
+//  console.log(name); // ❌ ReferenceError: name is not defined
+    console.log(this.name)
+    console.log(`Naam : ${this.name}, skills ${skill1}, ${skill2}`)
+}
+
+intro.call(user, "React", "Next");

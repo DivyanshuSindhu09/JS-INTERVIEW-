@@ -1,0 +1,1 @@
+(e) => e.stopPropogation() -> isse events propogate nhi honge

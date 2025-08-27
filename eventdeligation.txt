@@ -1,1 +1,17 @@
 (e) => e.stopPropogation() -> isse events propogate nhi honge
+
+📌 Event Delegation Summary
+
+Definition: Ek parent element pe single event listener lagana aur uske child elements ke events ko handle karna event bubbling ke through.
+
+Kaise kaam karta hai: Event bubble hoke parent tak jata hai → parent listener e.target check karke batata hai kis child pe event hua.
+
+Fayde:
+
+Kam memory use hoti hai (har element pe alag listener nahi).
+
+Dynamic elements ke liye easy (naye elements add huye toh bhi event work karega).
+
+Code clean & maintainable.
+
+Example: Ek <div> pe click listener lagakar uske andar ke saare buttons ka click handle karna.
